@@ -46,8 +46,7 @@ RCT_REMAP_METHOD(initKey,
 }
 RCT_REMAP_METHOD(reportCusError,
                  page:(NSString *)page method:(NSString *)method
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+                 )
 {
     /**
      *  上报自定义错误 页面+错误方法

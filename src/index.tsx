@@ -42,6 +42,6 @@ export function initKey(a: string, b: string): Promise<number> {
  * @param {string} b 方法
  * @returns {Promise<number>}
  */
-export function reportCusError(a: string, b: string): Promise<number> {
-  return Umsdk.initKey(a, b);
+export function reportCusError(a: string, b: string) {
+  return Umsdk.reportCusError(a, b);
 }
