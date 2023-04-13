@@ -38,7 +38,7 @@ export function initKey(a: string, b: string): Promise<number> {
  *自定义错误上传
  *
  * @export
- * @param {string} a 页面
+ * @param {string} a 简单修改测试自动化发布
  * @param {string} b 方法
  * @returns {Promise<number>}
  */
