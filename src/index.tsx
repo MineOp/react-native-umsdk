@@ -5,21 +5,9 @@ const LINKING_ERROR =
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
-
-  /**
-   * crashEvent 友盟监听崩溃后发送通知到js
-   * const ReactEventEmit = NativeModules.Umsdk;
-
-  const myReactEventEmit = new NativeEventEmitter(ReactEventEmit);
-
-  this.listener = myReactEventEmit.addListener('crashEvent', (data: { result: string }) => {
-
-        console.warn('====== cashierSuccess ======= ' + JSON.stringify(data));
-
-        this.process(data.result);
-
-      });
-   */
+/**
+ * 初始化 UMA 相关信息
+ */
 const Umsdk = NativeModules.Umsdk
   ? NativeModules.Umsdk
   : new Proxy(
